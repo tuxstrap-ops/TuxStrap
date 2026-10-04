@@ -146,13 +146,10 @@ class GameLauncher:
                 k, v = f.split("=", 1)
                 env[k] = v
 
-        # 5. Vulkan Uncap & Intel Iris Xe FPS & Smoothness Boost
+        # 5. Stable Vulkan & Mesa Optimization
         for f in [
-            "MESA_VK_WSI_PRESENT_MODE=immediate",
             "vblank_mode=0",
             "mesa_glthread=true",
-            "MESA_SHADER_CACHE_MAX_SIZE=2048M",
-            "ANV_PRIMITIVE_REPLICATION=1",
         ]:
             cmd.append(f"--env={f}")
             k, v = f.split("=", 1)
@@ -168,7 +165,6 @@ class GameLauncher:
             )
             self._launch_time = time.time()
             threading.Thread(target=self._monitor_process, daemon=True).start()
-            threading.Thread(target=self._xml_watchdog, daemon=True).start()
             return True
         except Exception as e:
             log(f"[Launcher Error] Failed to spawn process: {e}", "ERROR")

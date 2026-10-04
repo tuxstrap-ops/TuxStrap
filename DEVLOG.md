@@ -112,3 +112,18 @@ Yarın yapılacaklar:
    * Tek satırda çalışabilen, bağımlılıkları (Python, PyGObject, Flatpak, Sober) kontrol eden kurulum scripti yazıldı.
    * Dosyaları `~/.local/share/tuxstrap` altına yerleştirip `~/.local/bin/tuxstrap` kısayolunu ve uygulama ikonunu otomatik kaydeder.
    * `--uninstall` parametresiyle temiz kaldırma desteği eklendi.
+
+---
+
+## [v2.0.1-hotfix] - 2026-10-04 (Rock-Solid Crash Prevention Hotfix)
+
+### 🛠️ Yapılan Düzeltmeler:
+1. **Mesa Vulkan Değişkenleri Sadeleştirildi:**
+   * Intel Iris Xe üzerinde pencereyi aniden kapatabilen deneysel ANV_PRIMITIVE_REPLICATION ve MESA_VK_WSI_PRESENT_MODE kaldırıldı. Sadece kaya gibi sağlam standart Vulkan değişkenleri bırakıldı.
+2. **FastFlags Güvenli Listeye Alındı:**
+   * Sober'ın Android grafik katmanında shader çökmesine yol açabilen FFlagFastGPULightCulling3 ve FFlagDisablePostFx kaldırıldı.
+   * FPS sınırı kararlı 240 FPS bandına çekildi.
+3. **XML Watchdog Çakışması Engellendi:**
+   * Oyun açıkken 8. saniyede XML'e tekrar yazmaya çalışan thread kaldırıldı; dosya kilidi yarışması engellendi.
+4. **8/8 Tam Test Başarısı:**
+   * Birim testleri güncellendi ve tamamı sıfır hata ile doğrulandı.

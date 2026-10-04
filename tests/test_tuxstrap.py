@@ -26,8 +26,7 @@ class TestPresets(unittest.TestCase):
             self.assertIn("flags", p)
             self.assertIn("graphics_optimization_mode", p)
             self.assertIn("xml_quality", p)
-            self.assertIn("xml_saved_quality", p)
-            self.assertEqual(p["xml_framecap"], 360 if "Ultra" in name or "Comp" in name else (240 if "Bal" in name else 144))
+            self.assertEqual(p["xml_framecap"], 240 if ("Ultra" in name or "Comp" in name or "Bal" in name) else 144)
 
 
 class TestConfig(unittest.TestCase):

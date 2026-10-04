@@ -10,13 +10,12 @@ PRESETS: Dict[str, Dict[str, Any]] = {
         "description": "Grafik kalitesini en alt seviyeye çeker, tüm gereksiz render yükünü kapatır. Oynanabilir ama görsel açıdan çok yalın.",
         "xml_quality": 1,
         "xml_saved_quality": 1,
-        "xml_framecap": 360,  # 360 FPS cap (uncapped)
+        "xml_framecap": 240,
         "flags": {
-            "DFIntTaskSchedulerTargetFps": 360,
+            "DFIntTaskSchedulerTargetFps": 240,
             "FFlagTaskSchedulerLimitTargetFpsTo2402": False,
             "FFlagDebugDisplayFPS": True,
             "DFFlagDisableDPIScale": True,
-            "FFlagDisablePostFx": True,
             "FIntRenderShadowIntensity": 0,
             "FFlagGlobalWindActivated": False,
             "DFIntCSGLevelOfDetailSwitchingDistance": 0,
@@ -25,7 +24,6 @@ PRESETS: Dict[str, Dict[str, Any]] = {
             "DFIntCSGLevelOfDetailSwitchingDistanceL34": 0,
             "FIntFRMMaxGrassDistance": 0,
             "FIntFRMMinGrassDistance": 0,
-            "FFlagFastGPULightCulling3": True,
         },
         "graphics_optimization_mode": "performance"
     },
@@ -33,9 +31,9 @@ PRESETS: Dict[str, Dict[str, Any]] = {
         "description": "Oynanabilir görsel kalite ile yüksek ve stabil FPS dengesi. Taktikal ve rekabetçi oyun için.",
         "xml_quality": 3,
         "xml_saved_quality": 3,
-        "xml_framecap": 360,
+        "xml_framecap": 240,
         "flags": {
-            "DFIntTaskSchedulerTargetFps": 360,
+            "DFIntTaskSchedulerTargetFps": 240,
             "FFlagTaskSchedulerLimitTargetFpsTo2402": False,
             "FFlagDebugDisplayFPS": True,
             "DFFlagDisableDPIScale": True,
@@ -46,7 +44,6 @@ PRESETS: Dict[str, Dict[str, Any]] = {
             "DFIntCSGLevelOfDetailSwitchingDistanceL34": 400,
             "FIntFRMMaxGrassDistance": 0,
             "FIntFRMMinGrassDistance": 0,
-            "FFlagFastGPULightCulling3": True,
         },
         "graphics_optimization_mode": "performance"
     },
