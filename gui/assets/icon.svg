@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Rect -->
+  <rect width="256" height="256" rx="56" fill="url(#bg)" />
+  <!-- Speed lines / Ring -->
+  <circle cx="128" cy="128" r="90" stroke="url(#accent)" stroke-width="6" stroke-dasharray="16 8" fill="none" opacity="0.6"/>
+  <!-- Roblox Chevrons / Penguin Stylized -->
+  <path d="M128 48 L188 128 L128 208 L68 128 Z" fill="none" stroke="url(#accent)" stroke-width="12" stroke-linejoin="round"/>
+  <!-- Center Flash / Lightning -->
+  <polygon points="128,75 145,120 125,120 135,175 110,132 125,132" fill="#ffffff" />
+</svg>

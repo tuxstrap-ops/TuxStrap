@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=TuxStrap
+Comment=Fast, modern and unblocked Roblox client bootstrapper for Linux
+Exec=tuxstrap
+Icon=tuxstrap
+Terminal=false
+Categories=Game;Utility;
+Keywords=roblox;sober;launcher;bootstrapper;bypass;gaming;
+StartupNotify=true
+StartupWMClass=tuxstrap

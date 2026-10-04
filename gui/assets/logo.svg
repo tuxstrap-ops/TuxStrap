@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Background Vignette Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#1e1338" />
+      <stop offset="60%" stop-color="#0c0a1a" />
+      <stop offset="100%" stop-color="#06050b" />
+    </radialGradient>
+
+    <!-- Neon Cyber Ribbon Gradient -->
+    <linearGradient id="neonBrand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <!-- Core Wing Highlight Gradient -->
+    <linearGradient id="coreWing" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Amber Accent for Penguin Beak -->
+    <linearGradient id="amberBeak" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow Filter for Depth -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#8b5cf6" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- App Rounded Base Frame (Modern squircle like Steam/Discord) -->
+  <rect x="8" y="8" width="240" height="240" rx="54" fill="url(#bgGlow)" stroke="#261b47" stroke-width="2" />
+
+  <!-- Outer Isometric Roblox Tilt Shield (TuxStrap Frame) -->
+  <g filter="url(#shadow)">
+    <!-- Back Diamond Facet -->
+    <path d="M 128,42 L 204,86 L 204,170 L 128,214 L 52,170 L 52,86 Z" 
+          fill="#131124" stroke="url(#neonBrand)" stroke-width="3.5" stroke-linejoin="round" />
+
+    <!-- Tux Minimalist Geometric Silhouette (Wing Left) -->
+    <path d="M 68,98 L 118,126 L 118,188 L 68,158 Z" 
+          fill="url(#coreWing)" opacity="0.85" />
+
+    <!-- Tux Minimalist Geometric Silhouette (Wing Right) -->
+    <path d="M 188,98 L 138,126 L 138,188 L 188,158 Z" 
+          fill="url(#neonBrand)" opacity="0.95" />
+
+    <!-- Central Roblox Diamond Core (Negative Space Tilted Center) -->
+    <path d="M 128,76 L 164,98 L 128,120 L 92,98 Z" 
+          fill="#ffffff" />
+    <path d="M 128,84 L 152,98 L 128,112 L 104,98 Z" 
+          fill="#0c0a1a" />
+
+    <!-- Minimalist Beak / Apex Indicator -->
+    <polygon points="128,120 120,132 136,132" fill="url(#amberBeak)" />
+
+    <!-- Dynamic Speed Lines / Pacing Stripes -->
+    <line x1="88" y1="62" x2="168" y2="62" stroke="url(#neonBrand)" stroke-width="2.5" stroke-linecap="round" opacity="0.4" />
+  </g>
+</svg>
